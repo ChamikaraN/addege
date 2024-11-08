@@ -10,23 +10,29 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        pink: {
-          600: "#F72585",
+        primary: {
+          DEFAULT: "#16A085", // The green shade used for buttons and highlights
+          dark: "#0F766E", // Darker version of primary for dark mode
         },
-        purple: {
-          600: "#7209B7",
-          700: "#560BAD",
-          800: "#3A0CA3",
+        secondary: {
+          DEFAULT: "#DAF7A6", // Light greenish-blue
+          dark: "#A0C4B0", // Muted secondary for dark mode
         },
-        indigo: {
-          600: "#4361EE",
+        background: {
+          light: "#FFFFFF", // White for background in light mode
+          dark: "#1C1C1C", // Darker background for dark mode
         },
-        blue: {
-          600: "#4895EF",
+        text: {
+          DEFAULT: "#333333", // Dark text for headings and paragraphs
+          light: "#A5A5A5", // Muted gray for lighter text in dark mode
         },
-        cyan: {
-          400: "#4CC9F0",
+        border: {
+          light: "#F3F4F6", // Light gray for borders and section dividers
+          dark: "#374151", // Darker borders in dark mode
         },
+      },
+      fontFamily: {
+        sans: ["Inter", "sans-serif"], // Matches modern fonts used in IT-related sites
       },
     },
   },

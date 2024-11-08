@@ -7,7 +7,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="py-20 bg-white dark:bg-gray-800 transition-colors duration-300"
+      className="py-20 bg-background-light dark:bg-background-dark transition-colors duration-300"
     >
       <div className="container mx-auto px-4">
         <motion.h2
@@ -15,7 +15,7 @@ export default function About() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
-          className="text-4xl font-bold text-center mb-12 text-gray-800 dark:text-white"
+          className="text-4xl font-bold text-center mb-12 text-text dark:text-white"
         >
           About Us
         </motion.h2>
@@ -42,17 +42,17 @@ export default function About() {
             viewport={{ once: true }}
             className="md:w-1/2 md:pl-12"
           >
-            <h3 className="text-2xl font-semibold mb-4 text-pink-600 dark:text-pink-400">
+            <h3 className="text-2xl font-semibold mb-4 text-primary dark:text-primary-dark">
               Our Mission
             </h3>
-            <p className="text-gray-700 dark:text-gray-300 mb-6">
-              At TechInnovate, we are passionate about leveraging cutting-edge
+            <p className="text-text dark:text-text-light mb-6">
+              At Addege, we are passionate about leveraging cutting-edge
               technologies to create innovative solutions that drive business
               growth and enhance user experiences. Our team of expert developers
               and designers work tirelessly to deliver high-quality applications
               that push the boundaries of what's possible in the digital world.
             </p>
-            <ul className="list-disc list-inside text-gray-700 dark:text-gray-300">
+            <ul className="list-disc list-inside text-text dark:text-text-light">
               <li>Expert team with diverse skills</li>
               <li>Commitment to continuous learning and innovation</li>
               <li>Focus on delivering measurable results for our clients</li>

@@ -62,7 +62,7 @@ export default function Portfolio() {
   return (
     <section
       id="portfolio"
-      className="py-20 bg-white dark:bg-gray-800 transition-colors duration-300"
+      className="py-20 bg-background-light dark:bg-background-dark transition-colors duration-300"
     >
       <div className="container mx-auto px-4">
         <motion.h2
@@ -70,7 +70,7 @@ export default function Portfolio() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
-          className="text-4xl font-bold text-center mb-12 text-gray-800 dark:text-white"
+          className="text-4xl font-bold text-center mb-12 text-text dark:text-white"
         >
           Our Portfolio
         </motion.h2>
@@ -81,8 +81,8 @@ export default function Portfolio() {
               onClick={() => setActiveCategory(category)}
               className={`mx-2 px-4 py-2 rounded-full text-sm font-medium ${
                 activeCategory === category
-                  ? "bg-pink-600 text-white"
-                  : "bg-gray-200 text-gray-700 dark:bg-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600"
+                  ? "bg-primary text-white dark:bg-primary-dark"
+                  : "bg-secondary text-text dark:bg-secondary-dark dark:text-text-light hover:bg-primary hover:text-white dark:hover:bg-primary-dark"
               } transition duration-300`}
             >
               {category.charAt(0).toUpperCase() + category.slice(1)}
@@ -102,7 +102,7 @@ export default function Portfolio() {
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
                 transition={{ duration: 0.5 }}
-                className="bg-white dark:bg-gray-700 rounded-lg shadow-lg overflow-hidden"
+                className="bg-white dark:bg-background-dark rounded-lg shadow-lg overflow-hidden"
               >
                 <Image
                   src={project.image}
@@ -112,20 +112,20 @@ export default function Portfolio() {
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-2 text-gray-800 dark:text-white">
+                  <h3 className="text-xl font-semibold mb-2 text-text dark:text-white">
                     {project.name}
                   </h3>
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.technologies.map((tech) => (
                       <span
                         key={tech}
-                        className="bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-300 px-2 py-1 rounded-full text-xs"
+                        className="bg-secondary dark:bg-secondary-dark text-text dark:text-text-light px-2 py-1 rounded-full text-xs"
                       >
                         {tech}
                       </span>
                     ))}
                   </div>
-                  <button className="bg-pink-600 hover:bg-pink-700 text-white font-medium py-2 px-4 rounded transition duration-300">
+                  <button className="bg-primary hover:bg-primary-dark text-white font-medium py-2 px-4 rounded transition duration-300">
                     View Project
                   </button>
                 </div>

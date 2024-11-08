@@ -14,7 +14,7 @@ export default function Hero() {
           objectFit="cover"
           quality={100}
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-purple-900 to-pink-600 opacity-75"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-primary to-secondary opacity-75"></div>
       </div>
       <div className="relative z-10 text-center text-white">
         <motion.h1
@@ -38,7 +38,7 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, delay: 0.6 }}
-          className="bg-pink-600 hover:bg-pink-700 text-white font-bold py-3 px-6 rounded-full text-lg transition duration-300 ease-in-out transform hover:scale-105"
+          className="bg-white text-primary hover:bg-primary hover:text-white dark:bg-primary-dark dark:text-white dark:hover:bg-white dark:hover:text-primary-dark font-bold py-3 px-6 rounded-full text-lg transition duration-300 ease-in-out transform hover:scale-105"
         >
           Get Started
         </motion.button>
