@@ -26,7 +26,7 @@ const testimonials = [
     role: "Founder, CryptoWallet",
     image: "/testimonial3.jpg",
     quote:
-      "Addege's crypto wallet app is a game-changer. Their expertise in React Native and Web3.js has resulted in a secure and user-friendly wallet that has significantly improved our users' experience.",
+      "Addege &quot; s crypto wallet app is a game-changer. Their expertise in React Native and Web3.js has resulted in a secure and user-friendly wallet that has significantly improved our users' experience.",
   },
 ];
 
@@ -71,7 +71,7 @@ export default function Testimonials() {
                 </div>
               </div>
               <p className="text-text dark:text-text-light italic">
-                "{testimonial.quote}"
+                &ldquo;{testimonial.quote}&ldquo;
               </p>
             </motion.div>
           ))}

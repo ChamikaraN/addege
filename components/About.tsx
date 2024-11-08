@@ -50,7 +50,8 @@ export default function About() {
               technologies to create innovative solutions that drive business
               growth and enhance user experiences. Our team of expert developers
               and designers work tirelessly to deliver high-quality applications
-              that push the boundaries of what's possible in the digital world.
+              that push the boundaries of what&quot;s possible in the digital
+              world.
             </p>
             <ul className="list-disc list-inside text-text dark:text-text-light">
               <li>Expert team with diverse skills</li>
