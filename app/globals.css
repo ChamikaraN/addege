@@ -5,16 +5,20 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 51, 51, 51;
+  /* Converting #1E293B (text.DEFAULT) to RGB */
+  --foreground-rgb: 30, 41, 59;
+  /* Converting #FFFFFF (background.light) to RGB */
   --background-start-rgb: 255, 255, 255;
   --background-end-rgb: 255, 255, 255;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 165, 165, 165;
-    --background-start-rgb: 28, 28, 28;
-    --background-end-rgb: 28, 28, 28;
+    /* Converting #94A3B8 (text.light) to RGB */
+    --foreground-rgb: 148, 163, 184;
+    /* Converting #0F172A (background.dark) to RGB */
+    --background-start-rgb: 15, 23, 42;
+    --background-end-rgb: 15, 23, 42;
   }
 }
 
@@ -25,6 +29,5 @@ body {
       transparent,
       rgb(var(--background-end-rgb))
     )
+    rgb(var(--background-start-rgb));
 }
-
-/* this is added to trigger deployment */

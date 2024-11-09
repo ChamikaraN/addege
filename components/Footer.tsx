@@ -88,8 +88,8 @@ export default function Footer() {
             </form>
           </div>
         </div>
-        <div className="border-t border-gray-700 mt-8 pt-8 text-center">
-          <p>&copy; {new Date().getFullYear()} Addege. All rights reserved.</p>
+        <div className="border-t border-border-light dark:border-border-dark mt-8 pt-8 text-center">
+          <p>&copy; 2023 TechInnovate. All rights reserved.</p>
         </div>
       </div>
     </footer>
